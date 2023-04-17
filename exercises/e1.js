@@ -5,31 +5,41 @@
 /**
  * ====================================================
  * Create a function to work as follows:
-  * The function name is 'logMessage' strictly.
-  * The function MUST use NAMED function syntax.
-  * The function logs a message in the console.
-  * The function does NOT require any arguments.
+ * The function name is 'logMessage' strictly.
+ * The function MUST use NAMED function syntax.
+ * The function logs a message in the console.
+ * The function does NOT require any arguments.
  * Message to print: 'Hello, World!'
  * logMessage() => 'Hello, World!'
-*/
+ */
 
-// Your code goes here
+function logMessage() {
+    console.log('Hello, World!');
+}
 
+logMessage();
 
 
 
 /**
  * =============================================================
  * Create a function that works as follows:
-  * The function name is 'logMyMessage' strictly.
-  * The function MUST use NAMED function syntax.
-  * The function logs a specific message in the console.
-  * The message is a string value passed as an argument
+ * The function name is 'logMyMessage' strictly.
+ * The function MUST use NAMED function syntax.
+ * The function logs a specific message in the console.
+ * The message is a string value passed as an argument
  * Message example: 'I log my first message!'
  * logMyMessage('My message') => 'My message'
-*/
+ */
+function logMyMessage(message) {
+    console.log(message);
+}
 
-// Your code goes here...
+
+logMyMessage('I log my first message!');
+
+
+
 
 
 
@@ -37,14 +47,18 @@
 /**
  * ===============================================================
  * Create a  function that works as follows:
-  * The function name is 'logMessageWithMyName' strictly.
-  * The function MUST use NAMED function syntax.
-  * The function logs a message of 'My name is <name>!'.
-  * The name is a string value passed as an argument
+ * The function name is 'logMessageWithMyName' strictly.
+ * The function MUST use NAMED function syntax.
+ * The function logs a message of 'My name is <name>!'.
+ * The name is a string value passed as an argument
  * logMessageWithMyName('Andrey') => 'My name is Andrey!'
-*/
+ */
 
-// Your code goes here...
+function logMessageWithMyName(userName) {
+    console.log('My name is ' + userName + '!');
+}
+
+logMessageWithMyName('Andrey');
 
 
 
@@ -52,15 +66,19 @@
 /**
  * ==============================================================
  * Create a function that works as follows:
-  * the function name is 'logMyInfo' strictly.
-  * The function MUST use NAMED function syntax.
-  * The function of logs a message of 'My name is <name>. I am <age> years old!'.
-  * The name is a string value passed as an argument.
-  * The age is a number value passed as an argument.
+ * the function name is 'logMyInfo' strictly.
+ * The function MUST use NAMED function syntax.
+ * The function of logs a message of 'My name is <name>. I am <age> years old!'.
+ * The name is a string value passed as an argument.
+ * The age is a number value passed as an argument.
  * logMyInfo('Andrey', 18) => 'My name is Andrey. I am 18 years old!'
-*/
+ */
 
-// Your code goes here...
+function logMyInfo(name, age) {
+    console.log('My name is ' + name + '. I am ' + age + ' years old!');
+}
+
+logMyInfo('Andry', 18);
 
 
 
@@ -73,10 +91,10 @@
 
 // Do not delete or change the lines beneath
 const f = {
-  logMessage: logMessage || undefined,
-  logMyMessage: logMyMessage || undefined,
-  logMessageWithMyName: logMessageWithMyName || undefined,
-  logMyInfo: logMyInfo || undefined
+    logMessage: logMessage || undefined,
+    logMyMessage: logMyMessage || undefined,
+    logMessageWithMyName: logMessageWithMyName || undefined,
+    logMyInfo: logMyInfo || undefined
 }
 
 export { f };
